@@ -209,4 +209,4 @@
 
 ## 📄 开源协议
 
-本项目采用 [Unlicense 协议](LICENSE) 开源。
+本项目采用 [Unlicense 协议](LICENSE) 发布。
