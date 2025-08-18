@@ -123,6 +123,7 @@
 - 进行中 In Progress [in-progress]
 - 已完成 Done [done]
 - 阻塞项 Blocked [blocked]
+- 已取消 Cancelled [cancelled]
 
 ### 迭代管理 Sprint Management [sprint-management]
 
