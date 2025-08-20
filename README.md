@@ -27,6 +27,11 @@
 ## 📋 项目概述 Project Overview [project-overview]
 
 - 目标和愿景 Goals and Vision [goals-and-vision]
+- 系统要求 System Requirements [system-requirements]
+  - 硬件要求 Hardware Requirements [hardware-requirements]
+  - 软件要求 Software Requirements [software-requirements]
+  - 网络要求 Network Requirements [network-requirements]
+  - 安全要求 Security Requirements [security-requirements]
 - 商业画布 Business Model [business-model]
 - 路线图 Roadmap [roadmap]
 - 版本管理 Version Management [version-management]
@@ -35,11 +40,6 @@
   - 版本历史 Version History [version-history]
   - 项目里程碑 Project Milestones [project-milestones]
   - 废弃功能 Deprecated Features [deprecated-features]
-- 系统要求 System Requirements [system-requirements]
-  - 硬件要求 Hardware Requirements [hardware-requirements]
-  - 软件要求 Software Requirements [software-requirements]
-  - 网络要求 Network Requirements [network-requirements]
-  - 安全要求 Security Requirements [security-requirements]
 
 ## 📋 开发指南 Development Guide [development-guide]
 
@@ -78,6 +78,13 @@
 
 - 发布流程 Release Process [release-process]
 - 环境配置 Environment Configuration [environment-configuration]
+
+### 开发故障排查 Development Troubleshooting [development-troubleshooting]
+
+- 开发环境问题 Development Environment Issues [dev-env-issues]
+- 构建问题 Build Issues [build-issues]
+- 调试指南 Debugging Guide [debugging-guide]
+- 开发者 FAQ Developer FAQ [developer-faq]
 
 ## 📦 项目交付物 Project Deliverables [project-deliverables]
 
@@ -167,6 +174,13 @@
 - 日志管理 Log Management [log-management]
 - 备份与恢复 Backup & Recovery [backup-recovery]
 - 更新与升级 Updates & Upgrades [updates-upgrades]
+
+### 运维故障排查 Operations Troubleshooting [ops-troubleshooting]
+
+- 部署问题 Deployment Issues [deployment-issues]
+- 性能问题 Performance Issues [performance-issues]
+- 监控告警 Monitoring Alerts [monitoring-alerts]
+- 运维 FAQ Operations FAQ [operations-faq]
 
 ## 👥 用户手册 User Guide [user-guide]
 
