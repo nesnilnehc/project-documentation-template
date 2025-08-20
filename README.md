@@ -35,6 +35,11 @@
   - 版本历史 Version History [version-history]
   - 项目里程碑 Project Milestones [project-milestones]
   - 废弃功能 Deprecated Features [deprecated-features]
+- 系统要求 System Requirements [system-requirements]
+  - 硬件要求 Hardware Requirements [hardware-requirements]
+  - 软件要求 Software Requirements [software-requirements]
+  - 网络要求 Network Requirements [network-requirements]
+  - 安全要求 Security Requirements [security-requirements]
 
 ## 📋 开发指南 Development Guide [development-guide]
 
