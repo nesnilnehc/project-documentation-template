@@ -91,6 +91,7 @@
 ### 业务交付物 Business Deliverables [business-deliverables]
 
 - 需求文档 Requirements Documentation [requirements-documentation]
+- 可行性研究 Feasibility Studies [feasibility-studies]
 - 业务功能设计 Business Functional Design [business-functional-design]
 - 用户故事 User Stories [user-stories]
 - 竞品分析 Competitive Analysis [competitive-analysis]
