@@ -19,6 +19,27 @@
 - **中型项目**：在小型项目基础上增加项目交付物和过程管理
 - **大型企业项目**：使用完整的文档结构
 
+## 🔧 作为 Git 子模块使用
+
+将此文档模板作为 Git 子模块集成到您的项目中：
+
+```bash
+# 添加文档标准子模块
+git submodule add https://github.com/nesnilnehc/project-documentation-template.git .doc-standards
+
+# 初始化并更新子模块
+git submodule update --init --recursive
+
+# 复制文档模板到项目
+mkdir -p docs
+cp -r .doc-standards/docs/* docs/
+```
+
+更新子模块：
+```bash
+git submodule update --remote .doc-standards
+```
+
 ## 📁 项目文档目录结构
 
 ```markdown
