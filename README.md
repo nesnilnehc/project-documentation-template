@@ -174,6 +174,13 @@ git submodule update --remote .doc-standards
 
 ## 📊 过程管理 Process Management [process-management]
 
+### 需求管理 Requirements Management [requirements-management]
+
+- 需求收集 Requirements Gathering [requirements-gathering]
+- 需求评估规范 Requirements Assessment Standards [requirements-assessment]
+- 需求优先级管理 Requirements Priority Management [requirements-priority]
+- 需求变更管理 Requirements Change Management [requirements-change]
+
 ### 项目看板 Project Board [project-board]
 
 - 待办事项 Backlog [backlog]
@@ -184,6 +191,7 @@ git submodule update --remote .doc-standards
 
 ### 迭代管理 Sprint Management [sprint-management]
 
+- 迭代计划规范 Sprint Planning Standards [sprint-planning-standards]
 - 当前迭代 Current Sprint [current-sprint]
 - 迭代计划 Sprint Planning [sprint-planning]
 - 迭代回顾 Sprint Retrospective [sprint-retrospective]
