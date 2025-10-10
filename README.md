@@ -35,7 +35,8 @@ mkdir -p docs
 cp -r .doc-standards/docs/* docs/
 ```
 
-更新子模块：
+**更新子模块：**
+
 ```bash
 git submodule update --remote .doc-standards
 ```
@@ -211,6 +212,27 @@ git submodule update --remote .doc-standards
 - 变更评估 Change Assessment [change-assessment]
 - 变更实施 Change Implementation [change-implementation]
 - 变更回顾 Change Review [change-review]
+
+### 架构决策记录 Architecture Decision Records [decisions]
+
+架构决策记录（ADR）用于记录项目中的重要技术决策及其背景、考虑的方案和最终决策理由。
+
+- ADR 模板 ADR Template [adr-template]
+- 决策记录 Decision Records [decision-records]
+  - 格式：`YYYYMMDD-{决策标题}.md`
+  - 包含：背景、方案分析、决策理由、后果分析
+
+**使用场景：**
+
+- 重大技术选型（数据库、框架、架构模式）
+- 系统架构变更决策
+- 开发流程和工具链调整
+- 跨项目影响的技术决策
+
+**参考资料：**
+
+- [ADR 官方文档](https://adr.github.io/)
+- [为什么使用 ADR](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
 
 ## 🛠️ 运维支持 Operations Support [operations-support]
 
