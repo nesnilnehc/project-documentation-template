@@ -82,6 +82,8 @@ git submodule update --remote .doc-standards
 - 架构规范 Architecture Patterns [architecture-patterns]
 - 代码审查 Code Review [code-review]
 - 安全规范 Security Standards [security-standards]
+- 配置规范 Configuration Standards [configuration-standards]
+  - 环境变量管理 Environment Variable Management [environment-variable-management]
 
 ### 构建规范 Build Standards [build-standards]
 
