@@ -243,6 +243,7 @@ git submodule update --remote .doc-standards
 - 部署策略 Deployment Strategy [deployment-strategy]
 - 部署流程 Deployment Process [deployment-process]
 - 环境管理 Environment Management [environment-management]
+- 生产环境更新 Production Update Process [production-update-process]
 - 回滚策略 Rollback Strategy [rollback-strategy]
 
 ### 监控与维护 Monitoring & Maintenance [monitoring-maintenance]
