@@ -102,6 +102,8 @@ git submodule update --remote .doc-standards
 
 - 发布流程 Release Process [release-process]
 - 环境配置 Environment Configuration [environment-configuration]
+- 版本规范 Versioning Standards [versioning-standards]
+- 发布质量门禁 Release Quality Gate [release-quality-gate]
 
 ### 开发故障排查 Development Troubleshooting [development-troubleshooting]
 
