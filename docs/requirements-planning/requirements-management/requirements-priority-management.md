@@ -1,5 +1,5 @@
 <!--
-Maintenance: 本文档以 [README.md](../../../README.md) 定义的项目文档结构为参考进行维护。
+Maintenance: This document is maintained with reference to the project documentation structure defined in [README.md](../../../README.md).
 Structure: requirements-planning > requirements-management > requirements-priority
 -->
 # Requirements Priority Management
