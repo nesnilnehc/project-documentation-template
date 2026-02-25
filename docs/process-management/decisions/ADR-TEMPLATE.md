@@ -1,104 +1,108 @@
-# ADR-{序号}: {决策标题}
+<!--
+Maintenance: 本文档以 [README.md](../../../README.md) 定义的项目文档结构为参考进行维护。
+Structure: process-management > change-management > architecture-decisions > adr-template
+-->
+# ADR-{Number}: {Decision Title}
 
-**日期：** YYYY-MM-DD  
-**状态：** [提案中/已接受/已弃用/已替代]  
-**决策者：** [决策参与人员]  
-**相关 Issue/PR：** [链接]
+**Date:** YYYY-MM-DD  
+**Status:** [Proposed/Accepted/Deprecated/Superseded]  
+**Decision Makers:** [Participants]  
+**Related Issue/PR:** [Link]
 
-## 背景和问题陈述
+## Context and Problem Statement
 
-简要描述需要做出决策的背景和面临的问题。
+Briefly describe the background and problem requiring a decision.
 
-## 考虑的方案
+## Considered Options
 
-### 方案 1：[方案名称]
+### Option 1: [Option Name]
 
-**描述：**
+**Description:**
 
-- 方案的详细说明
+- Detailed explanation of the option
 
-**优点：**
+**Pros:**
 
-- ✅ 优势 1
-- ✅ 优势 2
+- ✅ Advantage 1
+- ✅ Advantage 2
 
-**缺点：**
+**Cons:**
 
-- ❌ 劣势 1
-- ❌ 劣势 2
+- ❌ Disadvantage 1
+- ❌ Disadvantage 2
 
-### 方案 2：[方案名称]
+### Option 2: [Option Name]
 
-**描述：**
+**Description:**
 
-- 方案的详细说明
+- Detailed explanation of the option
 
-**优点：**
+**Pros:**
 
-- ✅ 优势 1
-- ✅ 优势 2
+- ✅ Advantage 1
+- ✅ Advantage 2
 
-**缺点：**
+**Cons:**
 
-- ❌ 劣势 1
-- ❌ 劣势 2
+- ❌ Disadvantage 1
+- ❌ Disadvantage 2
 
-## 决策
+## Decision
 
-选择了 **[方案名称]**
+Chose **[Option Name]**
 
-### 决策理由
+### Rationale
 
-详细说明为什么选择这个方案：
+Detailed explanation of why this option was chosen:
 
-1. 理由 1
-2. 理由 2
-3. 理由 3
+1. Reason 1
+2. Reason 2
+3. Reason 3
 
-## 后果
+## Consequences
 
-### 积极影响
+### Positive Impacts
 
-- 积极影响 1
-- 积极影响 2
+- Positive impact 1
+- Positive impact 2
 
-### 负面影响和风险
+### Negative Impacts and Risks
 
-- 风险 1（及缓解措施）
-- 风险 2（及缓解措施）
+- Risk 1 (and mitigation measures)
+- Risk 2 (and mitigation measures)
 
-### 技术债务
+### Technical Debt
 
-- 需要后续处理的技术债务
+- Technical debt requiring future attention
 
-## 实施计划
+## Implementation Plan
 
-1. [ ] 步骤 1
-2. [ ] 步骤 2
-3. [ ] 步骤 3
+1. [ ] Step 1
+2. [ ] Step 2
+3. [ ] Step 3
 
-## 验证标准
+## Validation Criteria
 
-如何验证这个决策是否成功：
+How to verify if this decision is successful:
 
-- 验证标准 1
-- 验证标准 2
+- Validation criterion 1
+- Validation criterion 2
 
-## 参考资料
+## References
 
-- [相关文档链接]
-- [相关 Issue/PR]
-- [技术参考]
+- [Related documentation link]
+- [Related Issue/PR]
+- [Technical reference]
 
-## 相关 ADR
+## Related ADRs
 
-- 前置：无
-- 后续：无
-- 替代：无
+- Predecessor: None
+- Successor: None
+- Supersedes: None
 
 ---
 
-## 更新记录
+## Update History
 
-- YYYY-MM-DD: 创建 ADR
-- YYYY-MM-DD: 更新状态为"已接受"
+- YYYY-MM-DD: Created ADR
+- YYYY-MM-DD: Updated status to "Accepted"

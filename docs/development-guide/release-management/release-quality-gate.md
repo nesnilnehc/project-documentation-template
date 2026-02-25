@@ -1,3 +1,7 @@
+<!--
+Maintenance: 本文档以 [README.md](../../../README.md) 定义的项目文档结构为参考进行维护。
+Structure: development-guide > release-management > release-process
+-->
 # Release Quality Gate
 
 Test System Refactoring Specification

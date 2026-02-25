@@ -1,0 +1,193 @@
+# Project Documentation Template
+
+> Standardized documentation templates for enterprise projects, optimized for AI-assisted development.
+
+## Overview
+
+This repository provides sample documentation covering the entire software development lifecycle. All files under `docs/` are reference samples—copy them into your project and adapt the content. No `.template` or `.sample` suffix is used; filenames are plain `.md`.
+
+## Quick Start for AI
+
+### 1. Understanding Project Structure
+
+Read `README.md` to understand the complete documentation hierarchy. The structure follows enterprise project lifecycle:
+- Project Overview (goals, vision, version history)
+- Requirements & Planning (requirements documentation and management)
+- Architecture & Design (system, application, data architecture, and design deliverables)
+- Development Guide (standards, build/test, release management)
+- Process Management (agile workflow, change management, governance)
+- Operations Guide (deployment, monitoring, troubleshooting)
+- User Guide (getting started, features, troubleshooting)
+- Compliance & Community (legal, privacy, support)
+
+### 2. Sample Document Usage
+
+Documents in `docs/` are samples with:
+- Structured placeholders: `[description]`, `[option1/option2]` where content should be customized
+- Tables with variable rows
+- Field explanations in comments
+- AI filling guidelines where applicable
+
+### 3. Common Workflows
+
+**Initialize Project Documentation**:
+1. Identify project type and scale (small/medium/large)
+2. Select appropriate documents from README structure
+3. Copy samples from `docs/` into your project
+4. Adapt placeholders and content for your project
+5. Maintain cross-document references
+
+**Generate Architecture Decision Record**:
+1. Use `docs/process-management/decisions/ADR-TEMPLATE.md`
+2. Generate sequential ADR number (ADR-001, ADR-002, etc.)
+3. Fill decision context, options, rationale, and consequences
+4. Update decision index
+
+**Update Version Information**:
+1. Locate `VERSION` file (semantic version)
+2. Update version following `docs/development-guide/release-management/versioning-standards.md`
+3. Update related documents referencing the version
+4. Update version history tables in affected documents
+
+## Key Documents
+
+### Core Documents
+
+- `docs/project-overview/goals-and-vision.md` - Project goals and vision
+- `docs/process-management/decisions/ADR-TEMPLATE.md` - Architecture decision records (copy to create new ADRs)
+- `docs/architecture/system-architecture/technology-stack/dependency-management/dependency-management-strategy.md` - Dependency management
+
+### Standard Documents
+
+- `docs/development-guide/development-standards/configuration-management/environment-variable-management-strategy.md` - Environment variable management
+- `docs/development-guide/release-management/versioning-standards.md` - Semantic versioning standards
+- `docs/development-guide/release-management/release-quality-gate.md` - Release quality gates
+- `docs/requirements-planning/requirements-management/requirements-priority-management.md` - Requirements prioritization frameworks
+- `docs/process-management/decisions/samples/20251010-process-management-strategy.md` - Process management strategy (Git + Platform hybrid example)
+- `docs/process-management/project-board/backlog.md` - Backlog format reference
+
+## Document Conventions
+
+### Placeholder Format
+
+- `[description]` - Text content to fill
+- `[option1/option2]` - Enumeration values to choose from
+- `YYYY-MM-DD` - Date format
+- `[number]` - Numeric values
+
+### Table Processing
+
+- Keep column alignment in Markdown format
+- Add/remove rows based on actual needs
+- Fields marked with `*` are required
+- Optional fields can be left empty or removed
+
+### Version Management
+
+When modifying documents:
+1. Update version history table at document bottom
+2. Record change description
+3. Update date and author information
+
+## Document Relationships
+
+### Reference Formats
+
+- File reference: `<mcfile name="filename" path="relative/path"></mcfile>`
+- External reference: `<mcreference link="URL" index="number">number</mcreference>`
+- Internal link: `[Document Name](relative/path)`
+
+### Key Relationships
+
+- Roadmap milestones ↔ Version management versions
+- Requirements documents ↔ Project board tasks
+- Architecture decisions ↔ Technology selection documents
+
+## Quality Checklist
+
+Before finalizing generated documents:
+
+- [ ] All placeholders `[...]` replaced
+- [ ] Table formatting intact, no misalignment
+- [ ] Date format consistent (YYYY-MM-DD)
+- [ ] Version history updated
+- [ ] Cross-document references valid
+- [ ] Markdown syntax correct
+- [ ] Chinese-English mixed formatting proper
+
+## Special Markers
+
+### AI Filling Guidelines
+
+Sections marked with "**AI 填充指南**" or "**AI Filling Guide**" contain instructions for AI. These can be removed after filling is complete.
+
+### Optional Content
+
+Sections marked with "可选" or "Optional" can be kept or removed based on project complexity.
+
+### Task Lists
+
+- `- [ ]` Incomplete tasks
+- `- [x]` Completed tasks
+
+## Best Practices
+
+### Progressive Filling
+
+1. Fill required fields first
+2. Confirm key information with user
+3. Fill optional fields
+4. Optimize formatting and details
+
+### Consistency Maintenance
+
+- Keep project name consistent across all documents
+- Unify date formats
+- Standardize terminology
+- Follow semantic versioning for version numbers
+
+### Intelligent Inference
+
+AI can infer from context:
+- Project type → Select appropriate templates
+- Tech stack → Fill dependency management strategy
+- Team size → Adjust process complexity
+
+## Error Handling
+
+| Error Type | Handling |
+|-----------|----------|
+| Unreplaced placeholders | Prompt user for missing information |
+| Table format errors | Auto-fix alignment issues |
+| Inconsistent date formats | Convert to YYYY-MM-DD |
+| Broken links | Check and fix relative paths |
+| Version conflicts | Prompt user to confirm correct version |
+
+## Integration
+
+### Git Operations
+
+```bash
+# Suggested Git operations
+git add docs/
+git commit -m "docs: initialize project documentation"
+git tag -a v1.0.0 -m "Release v1.0.0"
+```
+
+### CI/CD Validation
+
+Generate validation scripts for:
+- Markdown format checking
+- Link validity verification
+- Placeholder detection
+- Version number consistency check
+
+## License
+
+This project is released under the Unlicense license - completely public domain.
+
+## References
+
+- [Markdown Specification](https://commonmark.org/)
+- [Semantic Versioning](https://semver.org/)
+- [Architecture Decision Records](https://adr.github.io/)

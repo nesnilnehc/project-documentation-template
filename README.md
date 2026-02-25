@@ -1,312 +1,383 @@
-# 项目文档模板 Project Documentation Template
+# Project Documentation Template
 
 [![License: Unlicense](https://img.shields.io/badge/License-Unlicense-green.svg)](https://unlicense.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-一个全面的项目文档模板，为企业级项目提供标准化结构和最佳实践。包含中英文双语文档框架，涵盖从项目概览到运维的完整项目生命周期。
+A comprehensive project documentation template providing standardized structure and best practices for enterprise-level projects. Covers the complete project lifecycle from overview to operations.
 
-## 🌟 特性
+## 🌟 Features
 
-- 📚 **标准化结构**: 提供统一的项目文档组织框架
-- 🏢 **企业级**: 专为企业项目设计的文档标准
-- 📋 **生命周期覆盖**: 从项目启动到运维的完整文档体系
+- 🤖 **AI-Friendly**: Structured template design for easy AI understanding and content generation
+- 📚 **Standardized Structure**: Unified project documentation organization framework
+- 🏢 **Enterprise-Grade**: Documentation standards designed for enterprise projects
+- 📋 **Lifecycle Coverage**: Complete documentation system from project initiation to operations
+- 🔗 **Traceability**: Clear inter-document relationships with automated validation support
 
-## 📖 使用指南
+## 📖 Usage Guide
 
-本模板提供了完整的项目文档结构，您可以根据项目规模和需求选择相应的章节：
+### About the `docs/` Folder
 
-- **小型项目**：建议使用项目概述、开发指南和用户手册部分
-- **中型项目**：在小型项目基础上增加项目交付物和过程管理
-- **大型企业项目**：使用完整的文档结构
+All files under `docs/` are **sample documents** for reference. Copy them into your project and adapt the content. File names use plain `.md` extension (no `.template` or `.sample` suffix).
 
-## 🔧 作为 Git 子模块使用
+### For AI Usage
 
-将此文档模板作为 Git 子模块集成到您的项目中：
+This template is optimized for AI-assisted development. AI should read:
 
-```bash
-# 添加文档标准子模块
-git submodule add https://github.com/nesnilnehc/project-documentation-template.git .doc-standards
+- **llms.txt** - Complete usage guide, conventions, and workflows
+- **AGENTS.md** - AI agent configuration, capability definitions, and collaboration standards
 
-# 初始化并更新子模块
-git submodule update --init --recursive
+**AI Quick Start**:
 
-# 复制文档模板到项目
-mkdir -p docs
-cp -r .doc-standards/docs/* docs/
-```
+1. Read `llms.txt` for complete usage instructions
+2. Select appropriate documents from `docs/` based on project type
+3. Copy samples and adapt content for your project
+4. Maintain table formatting and document relationships
 
-**更新子模块：**
+### For Human Usage
 
-```bash
-git submodule update --remote .doc-standards
-```
+Select documentation sets based on project scale:
 
-## 📁 项目文档目录结构
+| Documentation Section | Small Projects | Medium Projects | Large Projects |
+|-----------------------|:--------------:|:---------------:|:--------------:|
+| 📋 Project Overview | ✅ | ✅ | ✅ |
+| 💻 Development Guide | ✅ | ✅ | ✅ |
+| 👥 User Guide | ✅ | ✅ | ✅ |
+| 🏗️ Architecture | | ✅ | ✅ |
+| 🎨 Design | | ✅ | ✅ |
+| 📝 Requirements & Planning | | ✅ | ✅ |
+| 📊 Process Management | | | ✅ |
+| 🛠️ Operations Guide | | | ✅ |
+| 🔒 Compliance | | | ✅ |
+| 🤝 Community & Contributing | | | ✅ |
+
+## 📁 Project Documentation Structure
 
 ```markdown
-# 项目文档
+# Project Documentation
 
-## 📋 项目概述 Project Overview [project-overview]
+## 📋 Project Overview [project-overview]
 
-- 目标和愿景 Goals and Vision [goals-and-vision]
-- 系统要求 System Requirements [system-requirements]
-  - 硬件要求 Hardware Requirements [hardware-requirements]
-  - 软件要求 Software Requirements [software-requirements]
-  - 网络要求 Network Requirements [network-requirements]
-  - 安全要求 Security Requirements [security-requirements]
-- 商业画布 Business Model [business-model]
-- 路线图 Roadmap [roadmap]
-- 版本管理 Version Management [version-management]
-  - 版本生命周期 Version Lifecycle [version-lifecycle]
-  - 发行说明 Release Notes [release-notes]
-  - 版本历史 Version History [version-history]
-  - 项目里程碑 Project Milestones [project-milestones]
-  - 废弃功能 Deprecated Features [deprecated-features]
+- 📄 Goals and Vision [goals-and-vision]
+- 📄 Business Model [business-model]
+- 📁 Roadmap [roadmap]
+  - 📄 Project Milestones [project-milestones]
+  - 📄 Feature Roadmap [feature-roadmap]
+- 📁 Version History [version-history]
+  - 📄 Release Notes [release-notes]
+  - 📄 Deprecated Features [deprecated-features]
 
-## 📋 开发指南 Development Guide [development-guide]
+## 📝 Requirements & Planning [requirements-planning]
 
-### 开发制度 Development Policies [development-policies]
+### Requirements Documentation [requirements-documentation]
 
-- 开发流程 Development Process [development-process]
-  - 敏捷开发 Agile Development [agile-development]
-  - 团队协作 Team Collaboration [team-collaboration]
+- 📁 System Requirements [system-requirements]
+  - 📄 Hardware Requirements [hardware-requirements]
+  - 📄 Software Requirements [software-requirements]
+  - 📄 Network Requirements [network-requirements]
+  - 📄 Security Requirements [security-requirements]
+- 📁 Business Requirements [business-requirements]
+  - 📄 User Stories [user-stories]
+  - 📄 Business Process Flow [business-process-flow]
+- 📄 Feasibility Studies [feasibility-studies]
 
-### 开发规范 Development Standards [development-standards]
+### Requirements Management [requirements-management]
 
-- 代码规范 Coding Standards [coding-standards]
-  - 命名约定 Naming Conventions [naming-conventions]
-  - 格式标准 Formatting Rules [formatting-rules]
-  - 注释规范 Commenting Guidelines [commenting-guidelines]
-  - 特定语言规范 Language-Specific Standards [language-specific-standards]
-- 设计规范 Design Principles [design-principles]
-- 架构规范 Architecture Patterns [architecture-patterns]
-- 代码审查 Code Review [code-review]
-- 安全规范 Security Standards [security-standards]
-- 配置规范 Configuration Standards [configuration-standards]
-  - 环境变量管理 Environment Variable Management [environment-variable-management]
+- 📄 Requirements Gathering [requirements-gathering]
+- 📄 Requirements Assessment [requirements-assessment]
+- 📄 Requirements Priority Management [requirements-priority]
 
-### 构建规范 Build Standards [build-standards]
+### Market Analysis [market-analysis]
 
-- 构建流程 Build Process [build-process]
-- 构建配置 Build Configuration [build-configuration]
-- 构建工具 Build Tools [build-tools]
+- 📁 Competitive Analysis [competitive-analysis]
+  - 📄 Competitor Landscape [competitor-landscape]
+  - 📄 Feature Comparison [feature-comparison]
+  - 📄 Market Positioning [market-positioning]
+- 📁 Market Research [market-research]
+  - 📄 Target Audience [target-audience]
+  - 📄 Market Trends [market-trends]
+  - 📄 Market Opportunities [market-opportunities]
 
-### 测试规范 Testing Standards [testing-standards]
+## 🏗️ Architecture [architecture]
 
-- 测试计划 Test Plans [test-plans]
-- 测试用例 Test Cases [test-cases]
-- 自动化测试 Automated Testing [automated-testing]
-- 性能测试 Performance Testing [performance-testing]
+### System Architecture [system-architecture]
 
-### 发布规范 Release Standards [release-standards]
+- 📁 Infrastructure Architecture [infrastructure-architecture]
+  - 📄 Cloud Infrastructure [cloud-infrastructure]
+  - 📄 Network Architecture [network-architecture]
+  - 📄 Resource Planning [resource-planning]
+- 📁 Deployment Architecture [deployment-architecture]
+  - 📄 Deployment Topology [deployment-topology]
+  - 📄 Scalability Design [scalability-design]
+  - 📄 High Availability Design [high-availability]
+- 📁 Security Architecture [security-architecture]
+  - 📄 Authentication & Authorization [auth-architecture]
+  - 📄 Data Security [data-security]
+  - 📄 Network Security [network-security]
+- 📁 Technology Stack [technology-stack]
+  - 📄 Infrastructure Technologies [infrastructure-tech]
+  - 📄 Application Technologies [application-tech]
+  - 📄 Development Technologies [development-tech]
+- 📁 Dependency Management [dependency-management]
+  - 📄 Third-party Libraries [third-party-libs]
+  - 📄 Version Management [version-management-deps]
+  - 📄 License Compliance [license-compliance]
 
-- 发布流程 Release Process [release-process]
-- 环境配置 Environment Configuration [environment-configuration]
-- 版本规范 Versioning Standards [versioning-standards]
-- 发布质量门禁 Release Quality Gate [release-quality-gate]
+### Application Architecture [application-architecture]
 
-### 开发故障排查 Development Troubleshooting [development-troubleshooting]
+- 📁 Layered Architecture [layered-architecture]
+  - 📄 Presentation Layer [presentation-layer]
+  - 📄 Business Logic Layer [business-layer]
+  - 📄 Data Access Layer [data-layer]
+- 📁 Service Architecture [service-architecture]
+  - 📄 Microservice Design [microservice-design]
+  - 📄 Service Interfaces [service-interfaces]
+  - 📄 Service Communication [service-communication]
+- 📁 Integration Architecture [integration-architecture]
+  - 📄 External Integrations [external-integrations]
+  - 📄 API Gateway [api-gateway]
+  - 📄 Message Queue [message-queue]
+- 📁 Cross-cutting Concerns [cross-cutting-concerns]
+  - 📄 Internationalization [internationalization]
+  - 📄 Logging Strategy [logging-strategy]
+  - 📄 Caching Strategy [caching-strategy]
+  - 📄 Error Handling [error-handling]
+  - 📄 State Management [state-management]
 
-- 开发环境问题 Development Environment Issues [dev-env-issues]
-- 构建问题 Build Issues [build-issues]
-- 调试指南 Debugging Guide [debugging-guide]
-- 开发者 FAQ Developer FAQ [developer-faq]
+### Data Architecture [data-architecture]
 
-## 📦 项目交付物 Project Deliverables [project-deliverables]
+- 📁 Database Design [database-design]
+  - 📄 Data Models [data-models]
+  - 📄 Schema Design [schema-design]
+  - 📄 Data Migration [data-migration]
+- 📁 Data Flow [data-flow]
+  - 📄 Data Pipeline [data-pipeline]
+  - 📄 Data Transformation [data-transformation]
 
-### 业务交付物 Business Deliverables [business-deliverables]
+### API Architecture [api-architecture]
 
-- 需求文档 Requirements Documentation [requirements-documentation]
-- 可行性研究 Feasibility Studies [feasibility-studies]
-- 业务功能设计 Business Functional Design [business-functional-design]
-  - 品牌设计 Brand Design [brand-design]
-    - 品牌形象 Brand Identity [brand-identity]
-    - 品牌故事 Brand Story [brand-story]
-    - 品牌标语 Brand Slogan [brand-slogan]
-    - 品牌色 Brand Color [brand-color]
-    - 品牌字体 Brand Font [brand-font]
-    - 品牌 Logo [brand-logo]
-    - 品牌 Banner [brand-banner]
-  - 视觉设计 Visual Design [visual-design]
-  - 交互设计 Interaction Design [interaction-design]
-  - 用户体验设计 User Experience Design [user-experience-design]
-  - 业务流程图 Business Process Flow [business-process-flow]
-- 用户故事 User Stories [user-stories]
-- 竞品分析 Competitive Analysis [competitive-analysis]
+- 📁 API Design [api-design]
+  - 📄 RESTful API [restful-api]
+  - 📄 GraphQL API [graphql-api]
+  - 📄 API Versioning [api-versioning]
+- 📄 Interface Specifications [interface-specifications]
+- 📄 API Documentation [api-documentation]
 
-### 技术交付物 Technical Deliverables [technical-deliverables]
+## 🎨 Design [design]
 
-- 系统架构设计 System Architecture Design [system-architecture-design]
-  - 基础设施架构 Infrastructure Architecture [infrastructure-architecture]
-  - 部署架构 Deployment Architecture [deployment-architecture]
-  - 运维技术栈 Operations Technology Stack [ops-tech-stack]
-  - 安全架构 Security Architecture [security-architecture]
-- 应用架构设计 Application Architecture Design [application-architecture-design]
-  - 应用分层架构 Application Layered Architecture [app-layered-architecture]
-  - 服务架构 Service Architecture [service-architecture]
-  - 集成架构 Integration Architecture [integration-architecture]
-  - 应用技术栈 Application Technology Stack [app-tech-stack]
-- 技术架构设计 Technical Architecture Design [technical-architecture-design]
-  - 开发技术栈 Development Technology Stack [dev-tech-stack]
-  - 功能模块设计 Functional Modules [functional-modules]
-  - 核心依赖 Dependencies [dependencies]
-  - 技术选型 Technology Selection [technology-selection]
-- 系统特性 System Features [system-features]
-  - 国际化 i18n [internationalization]
-  - 数据可视化 Data Visualization [data-visualization]
-  - 日志 Logging [logging]
-  - 配置 Configuration [configuration]
-- 数据库设计 Database Design [database-design]
-  - 数据模型 Data Models [data-models]
-  - 数据迁移 Data Migration [data-migration]
-- 接口设计 API Design [api-design]
-  - 接口规范 Interface Specifications [interface-specifications]
-  - API 文档 API Documentation [api-documentation]
-- 前端实现 Frontend Implementation [frontend-implementation]
-  - 组件 Components [components]
-  - 页面结构 Page Structure [page-structure]
-  - 状态管理 State Management [state-management]
-- 后端实现 Backend Implementation [backend-implementation]
-  - 微服务架构 Microservice Architecture [microservice-architecture]
-  - 服务接口 Service Interfaces [service-interfaces]
-  - 数据流 Data Flow [data-flow]
+### Brand Guidelines [brand-guidelines]
 
-### 实现交付物 Implementation Deliverables [implementation-deliverables]
+- 📄 Brand Identity [brand-identity]
+- 📄 Brand Story [brand-story]
+- 📄 Visual Identity System [visual-identity-system]
 
-- 源代码 Source Code [source-code]
-- 构建产物 Build Artifacts [build-artifacts]
-- 部署包 Deployment Packages [deployment-packages]
+### UI/UX Design [ui-ux-design]
 
-## 📊 过程管理 Process Management [process-management]
+- 📄 User Interface Design [ui-design]
+- 📄 Interaction Design [interaction-design]
+- 📄 User Experience Design [ux-design]
 
-### 需求管理 Requirements Management [requirements-management]
+### Design Process [design-process]
 
-- 需求收集 Requirements Gathering [requirements-gathering]
-- 需求评估规范 Requirements Assessment Standards [requirements-assessment]
-- 需求优先级管理 Requirements Priority Management [requirements-priority]
-- 需求变更管理 Requirements Change Management [requirements-change]
+- 📄 Design System [design-system]
+- 📄 Prototype & Wireframes [prototypes-wireframes]
+- 📄 Usability Testing [usability-testing]
 
-### 项目看板 Project Board [project-board]
+## 💻 Development Guide [development-guide]
 
-- 待办事项 Backlog [backlog]
-- 进行中 In Progress [in-progress]
-- 已完成 Done [done]
-- 阻塞项 Blocked [blocked]
-- 已取消 Cancelled [cancelled]
+### Development Standards [development-standards]
 
-### 迭代管理 Sprint Management [sprint-management]
+- 📁 Coding Standards [coding-standards]
+  - 📄 Naming Conventions [naming-conventions]
+  - 📄 Formatting Rules [formatting-rules]
+  - 📄 Commenting Guidelines [commenting-guidelines]
+  - 📄 Language-Specific Standards [language-specific-standards]
+- 📄 Design Principles [design-principles]
+- 📄 Architecture Patterns [architecture-patterns]
+- 📄 Code Review Guidelines [code-review]
+- 📄 Security Standards [security-standards]
+- 📁 Configuration Management [configuration-management]
+  - 📄 Environment Variable Management [environment-variable-management]
+  - 📄 Configuration Standards [configuration-standards]
 
-- 迭代计划规范 Sprint Planning Standards [sprint-planning-standards]
-- 当前迭代 Current Sprint [current-sprint]
-- 迭代计划 Sprint Planning [sprint-planning]
-- 迭代回顾 Sprint Retrospective [sprint-retrospective]
-- 迭代统计 Sprint Metrics [sprint-metrics]
+### Implementation [implementation]
 
-### 会议记录 Meeting Records [meeting-records]
+- 📁 Frontend Implementation [frontend-implementation]
+  - 📄 Component Architecture [component-architecture]
+  - 📄 Page Structure [page-structure]
+  - 📄 Client-side Routing [client-routing]
+- 📁 Backend Implementation [backend-implementation]
+  - 📄 Module Implementation [module-implementation]
+  - 📄 Service Implementation [service-implementation]
+  - 📄 Business Logic [business-logic]
 
-- 项目启动会 Project Kickoff [project-kickoff]
-- 需求评审会 Requirements Review [requirements-review]
-- 技术评审会 Technical Review [technical-review]
-- 项目例会 Project Standup [project-standup]
-- 项目总结会 Project Summary [project-summary]
+### Build and Test [build-test]
 
-### 变更管理 Change Management [change-management]
+- 📁 Build Process [build-process]
+  - 📄 Build Configuration [build-configuration]
+  - 📄 Build Tools [build-tools]
+- 📁 Testing Standards [testing-standards]
+  - 📄 Test Plans [test-plans]
+  - 📄 Test Cases [test-cases]
+  - 📄 Automated Testing [automated-testing]
+  - 📄 Performance Testing [performance-testing]
+  - 📄 Test Coverage Requirements [test-coverage]
+- 📁 Quality Assurance [quality-assurance]
+  - 📄 Code Quality Standards [code-quality]
+  - 📄 Security Scanning [security-scanning]
+  - 📄 Quality Metrics [quality-metrics]
 
-- 变更申请 Change Request [change-request]
-- 变更评估 Change Assessment [change-assessment]
-- 变更实施 Change Implementation [change-implementation]
-- 变更回顾 Change Review [change-review]
+### Release Management [release-management]
 
-### 架构决策记录 Architecture Decision Records [decisions]
+- 📁 Versioning Standards [versioning-standards]
+  - 📄 Version Lifecycle [version-lifecycle]
+  - 📄 Semantic Versioning [semantic-versioning]
+- 📁 Release Process [release-process]
+  - 📄 Release Planning [release-planning]
+  - 📄 Release Checklist [release-checklist]
 
-架构决策记录（ADR）用于记录项目中的重要技术决策及其背景、考虑的方案和最终决策理由。
+### Troubleshooting [dev-troubleshooting]
 
-- ADR 模板 ADR Template [adr-template]
-- 决策记录 Decision Records [decision-records]
-  - 格式：`YYYYMMDD-{决策标题}.md`
-  - 包含：背景、方案分析、决策理由、后果分析
+- 📄 Environment Setup Issues [env-setup-issues]
+- 📄 Build and Compilation Issues [build-issues]
+- 📄 Debugging Guide [debugging-guide]
+- 📄 Developer FAQ [developer-faq]
 
-**使用场景：**
+## 📊 Process Management [process-management]
 
-- 重大技术选型（数据库、框架、架构模式）
-- 系统架构变更决策
-- 开发流程和工具链调整
-- 跨项目影响的技术决策
+### Agile Workflow [agile-workflow]
 
-**参考资料：**
+- 📁 Sprint Management [sprint-management]
+  - 📄 Sprint Planning [sprint-planning]
+  - 📄 Current Sprint [current-sprint]
+  - 📄 Sprint Retrospective [sprint-retrospective]
+  - 📄 Sprint Metrics [sprint-metrics]
+- 📁 Project Board [project-board]
+  - 📄 Backlog [backlog]
+  - 📄 In Progress [in-progress]
+  - 📄 Done [done]
+  - 📄 Blocked [blocked]
+- 📁 Team Collaboration [team-collaboration]
+  - 📄 Communication Guidelines [communication-guidelines]
+  - 📁 Meeting Records [meeting-records]
+    - 📄 Daily Standup [daily-standup]
+    - 📄 Sprint Review [sprint-review]
+    - 📄 Technical Review [technical-review]
 
-- [ADR 官方文档](https://adr.github.io/)
-- [为什么使用 ADR](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+### Change Management [change-management]
 
-## 🛠️ 运维支持 Operations Support [operations-support]
+- 📁 Change Request Process [change-request-process]
+  - 📄 Requirements Change [requirements-change]
+  - 📄 Architecture Change [architecture-change]
+  - 📄 Change Request Template [change-request]
+  - 📄 Change Assessment [change-assessment]
+  - 📄 Change Implementation [change-implementation]
+- 📁 Architecture Decision Records [architecture-decisions]
+  - 📄 ADR Template [adr-template]
+  - 📁 Decision Records [decision-records]
+    - Format: `YYYYMMDD-{decision-title}.md`
+    - Contains: Context, options analysis, rationale, consequences
+  - ADR Use Cases: technology selection, architecture changes, cross-project decisions
+  - References: [ADR Official Documentation](https://adr.github.io/) · [Why Use ADR](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
 
-### 部署管理 Deployment Management [deployment-management]
+### Project Governance [project-governance]
 
-- 部署策略 Deployment Strategy [deployment-strategy]
-- 部署流程 Deployment Process [deployment-process]
-- 环境管理 Environment Management [environment-management]
-- 生产环境更新 Production Update Process [production-update-process]
-- 回滚策略 Rollback Strategy [rollback-strategy]
+- 📄 Project Kickoff [project-kickoff]
+- 📄 Project Status Reports [project-status]
+- 📄 Stakeholder Communication [stakeholder-communication]
 
-### 监控与维护 Monitoring & Maintenance [monitoring-maintenance]
+## 🛠️ Operations Guide [operations-guide]
 
-- 监控与告警 Monitoring & Alerting [monitoring-alerting]
-- 日志管理 Log Management [log-management]
-- 备份与恢复 Backup & Recovery [backup-recovery]
-- 更新与升级 Updates & Upgrades [updates-upgrades]
+### Deployment [deployment]
 
-### 运维故障排查 Operations Troubleshooting [ops-troubleshooting]
+- 📁 Deployment Strategy [deployment-strategy]
+  - 📄 Deployment Patterns [deployment-patterns]
+  - 📄 Rollback Strategy [rollback-strategy]
+- 📁 Deployment Process [deployment-process]
+  - 📄 Pre-deployment Checklist [pre-deployment]
+  - 📄 Deployment Steps [deployment-steps]
+  - 📄 Post-deployment Validation [post-deployment]
+- 📁 Environment Management [environment-management]
+  - 📄 Development Environment [dev-environment]
+  - 📄 Staging Environment [staging-environment]
+  - 📄 Production Environment [prod-environment]
+  - 📄 Environment Configuration [environment-configuration]
 
-- 部署问题 Deployment Issues [deployment-issues]
-- 性能问题 Performance Issues [performance-issues]
-- 监控告警 Monitoring Alerts [monitoring-alerts]
-- 运维 FAQ Operations FAQ [operations-faq]
+### Monitoring and Maintenance [monitoring-maintenance]
 
-## 👥 用户手册 User Guide [user-guide]
+- 📁 Monitoring and Alerting [monitoring-alerting]
+  - 📄 Metrics and KPIs [metrics-kpis]
+  - 📄 Alert Configuration [alert-configuration]
+- 📁 Log Management [log-management]
+  - 📄 Log Collection [log-collection]
+  - 📄 Log Analysis [log-analysis]
+- 📁 Backup and Recovery [backup-recovery]
+  - 📄 Backup Strategy [backup-strategy]
+  - 📄 Recovery Procedures [recovery-procedures]
+- 📁 System Maintenance [system-maintenance]
+  - 📄 Update Strategy [update-strategy]
+  - 📄 Patch Management [patch-management]
+  - 📄 Maintenance Windows [maintenance-windows]
 
-### 快速入门 Quick Start [quick-start]
+### Troubleshooting [ops-troubleshooting]
 
-- 环境配置 Setup [setup]
-- 快速开始指南 Quick Start Guide [quick-start-guide]
+- 📄 Deployment Issues [deployment-issues]
+- 📄 Performance Issues [performance-issues]
+- 📄 Incident Response [incident-response]
+- 📄 Operations FAQ [operations-faq]
 
-### 功能操作手册 Feature Operation Manual [feature-operation-manual]
+## 👥 User Guide [user-guide]
 
-- 核心功能 Core Features [core-features]
-- 高级功能 Advanced Features [advanced-features]
+### Getting Started [getting-started]
 
-### 故障排查指南 Troubleshooting [troubleshooting]
+- 📄 System Setup [system-setup]
+- 📄 Quick Start Guide [quick-start-guide]
+- 📄 Basic Concepts [basic-concepts]
 
-- 常见问题 FAQ [faq]
-- 错误代码 Error Codes [error-codes]
-- 解决方案 Solutions [solutions]
+### Feature Documentation [feature-documentation]
 
-### 学习资源 Learning Resources [learning-resources]
+- 📄 Core Features [core-features]
+- 📄 Advanced Features [advanced-features]
+- 📄 Feature Tutorials [feature-tutorials]
 
-- 视频教程 Video Tutorials [video-tutorials]
-- 示例代码 Examples [examples]
-- 最佳实践 Best Practices [best-practices]
+### Troubleshooting [user-troubleshooting]
 
-## 🔒 法律与支持 Legal & Support [legal-support]
+- 📄 FAQ [faq]
+- 📄 Error Messages [error-messages]
+- 📄 Common Issues and Solutions [common-issues]
 
-- 授权协议 License Agreements [license-agreements]
-  - MIT [mit-license]
-  - Unlicense [unlicense]
-  - 第三方依赖清单 Third-party Dependencies [third-party-dependencies]
-- 合规声明 Compliance Statements [compliance-statements]
-  - 数据隐私政策 Data Privacy Policy [data-privacy-policy]
-  - GDPR 合规指南 GDPR Compliance Guide [gdpr-compliance-guide]
-- 技术支持 Technical Support [technical-support]
-- 贡献指南 Contributing Guidelines [contributing-guidelines]
-- 社区指南 Community Guidelines [community-guidelines]
+### Learning Resources [learning-resources]
 
-## 📝 内容与分享 Content & Sharing [content-sharing]
+- 📄 Video Tutorials [video-tutorials]
+- 📄 Code Examples [code-examples]
+- 📄 Best Practices [best-practices]
+- 📄 External Resources [external-resources]
 
-- 技术分享 Technical Sharing [technical-sharing]
-- 项目动态 Project Updates [project-updates]
-- 博客文章 Blog Articles [blog-articles]
+## 🔒 Compliance [compliance]
+
+- 📁 License Agreements [license-agreements]
+  - 📄 Project License [project-license]
+  - 📄 Third-party Dependencies [third-party-licenses]
+- 📁 Data Privacy [data-privacy]
+  - 📄 Privacy Policy [privacy-policy]
+  - 📄 GDPR Compliance [gdpr-compliance]
+  - 📄 Data Protection [data-protection]
+
+## 🤝 Community & Contributing [community-contributing]
+
+### Contributing [contributing]
+
+- 📄 Contributing Guidelines [contributing-guidelines]
+- 📄 Code of Conduct [code-of-conduct]
+
+### Support [support]
+
+- 📁 Technical Support [technical-support]
+  - 📄 Support Channels [support-channels]
+  - 📄 Issue Reporting [issue-reporting]
+- 📄 Community Resources [community-resources]
 
 ```
 
-## 📄 开源协议
+## 📄 License
 
-本项目采用 [Unlicense 协议](LICENSE) 发布。
+This project is released under the [Unlicense](LICENSE) license.
