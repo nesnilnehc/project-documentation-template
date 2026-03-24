@@ -25,6 +25,7 @@ This template is optimized for AI-assisted development. AI should read:
 
 - **llms.txt** - Complete usage guide, conventions, and workflows
 - **AGENTS.md** - AI agent configuration, capability definitions, and collaboration standards
+- **docs/specs/documentation-spec.md** - Canonical governance spec for naming, references, and validation
 
 **AI Quick Start**:
 
@@ -38,7 +39,7 @@ This template is optimized for AI-assisted development. AI should read:
 Select documentation sets based on project scale:
 
 | Documentation Section | Small Projects | Medium Projects | Large Projects |
-|-----------------------|:--------------:|:---------------:|:--------------:|
+| --------------------- | :------------: | :-------------: | :------------: |
 | 📋 Project Overview | ✅ | ✅ | ✅ |
 | 💻 Development Guide | ✅ | ✅ | ✅ |
 | 👥 User Guide | ✅ | ✅ | ✅ |
@@ -274,7 +275,8 @@ Select documentation sets based on project scale:
 - 📁 Architecture Decision Records [architecture-decisions]
   - 📄 ADR Template [adr-template]
   - 📁 Decision Records [decision-records]
-    - Format: `YYYYMMDD-{decision-title}.md`
+    - Canonical format: `ADR-<3digits>-<kebab-title>.md` (for example `ADR-001-service-boundary.md`)
+    - Legacy date-prefixed filenames may appear in historical samples
     - Contains: Context, options analysis, rationale, consequences
   - ADR Use Cases: technology selection, architecture changes, cross-project decisions
   - References: [ADR Official Documentation](https://adr.github.io/) · [Why Use ADR](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)

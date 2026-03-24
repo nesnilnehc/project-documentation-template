@@ -5,6 +5,7 @@
 ## Overview
 
 This repository provides sample documentation covering the entire software development lifecycle. All files under `docs/` are reference samples—copy them into your project and adapt the content. No `.template` or `.sample` suffix is used; filenames are plain `.md`.
+The canonical governance source for this repository is `docs/specs/documentation-spec.md`.
 
 ## Quick Start for AI
 
@@ -39,7 +40,7 @@ Documents in `docs/` are samples with:
 
 **Generate Architecture Decision Record**:
 1. Use `docs/process-management/decisions/ADR-TEMPLATE.md`
-2. Generate sequential ADR number (ADR-001, ADR-002, etc.)
+2. Generate sequential ADR number (ADR-001, ADR-002, etc.) and use filename `ADR-<3digits>-<kebab-title>.md`
 3. Fill decision context, options, rationale, and consequences
 4. Update decision index
 
@@ -93,9 +94,10 @@ When modifying documents:
 
 ### Reference Formats
 
-- File reference: `<mcfile name="filename" path="relative/path"></mcfile>`
-- External reference: `<mcreference link="URL" index="number">number</mcreference>`
-- Internal link: `[Document Name](relative/path)`
+- Default internal reference (canonical): `[Document Name](relative/path)`
+- Optional interoperability tags for specific tooling contexts:
+  - `<mcfile name="filename" path="relative/path"></mcfile>`
+  - `<mcreference link="URL" index="number">number</mcreference>`
 
 ### Key Relationships
 

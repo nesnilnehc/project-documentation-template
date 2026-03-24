@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "enforced_paths": [
+    "README.md",
+    "llms.txt",
+    "AGENTS.md",
+    "docs/specs/documentation-spec.md",
+    "docs/specs/rules.yaml"
+  ],
+  "placeholder": {
+    "enabled": true,
+    "rule_id": "DOC-PLACEHOLDER-001",
+    "check_paths": [
+      "docs/specs/documentation-spec.md"
+    ],
+    "allow_patterns": [
+      "\\[ \\]",
+      "\\[x\\]",
+      "\\[X\\]"
+    ]
+  },
+  "date": {
+    "enabled": true,
+    "rule_id": "DOC-DATE-001",
+    "check_paths": [
+      "docs/specs/documentation-spec.md"
+    ],
+    "pattern": "\\b\\d{4}-\\d{2}-\\d{2}\\b"
+  },
+  "links": {
+    "enabled": true,
+    "rule_id": "DOC-LINK-001",
+    "check_paths": [
+      "README.md",
+      "llms.txt",
+      "AGENTS.md",
+      "docs/specs/documentation-spec.md"
+    ],
+    "allow_missing_targets": [
+      "relative/path",
+      "relative/path.md",
+      "filename"
+    ]
+  },
+  "entry_alignment": {
+    "enabled": true,
+    "rule_id": "DOC-ALIGN-001",
+    "required_spec_reference": "docs/specs/documentation-spec.md",
+    "rule_id_conflict": "DOC-ALIGN-002"
+  },
+  "naming": {
+    "enabled": true,
+    "rule_id": "DOC-NAMING-003",
+    "check_roots": [
+      "docs"
+    ],
+    "directory_pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+    "filename_patterns": [
+      "^[a-z0-9]+(?:-[a-z0-9]+)*\\.md$",
+      "^ADR-\\d{3}-[a-z0-9]+(?:-[a-z0-9]+)*\\.md$"
+    ],
+    "allow_filenames": [
+      "ADR-TEMPLATE.md"
+    ]
+  },
+  "manual_rules": [
+    {
+      "id": "DOC-NAMING-002",
+      "description": "ADR filename convention enforcement for downstream repositories using this template."
+    }
+  ]
+}

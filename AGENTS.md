@@ -16,7 +16,7 @@ This document defines how AI agents should interact with this project documentat
 - Maintain cross-document references and consistency
 - Update version history and metadata
 
-**Entry Point**: `llms.txt` for complete usage instructions
+**Entry Point**: `llms.txt` for usage workflows and `docs/specs/documentation-spec.md` as the governance source of truth
 
 ### Template Customization Agent
 
@@ -114,13 +114,15 @@ When processing requests, agents should prioritize:
 
 1. User explicit requirements
 2. Project-specific configuration (if exists)
-3. Conventions in llms.txt and README
-4. Sample documents under docs/
+3. Rules in `docs/specs/documentation-spec.md`
+4. Conventions in llms.txt and README
+5. Sample documents under docs/
 
 ## Agent Constraints
 
 ### Must Follow
 
+- Follow `docs/specs/documentation-spec.md` as canonical governance when conflicts appear
 - Preserve template structure and formatting
 - Replace all placeholders before finalizing
 - Maintain Markdown syntax correctness
@@ -182,7 +184,7 @@ Agents can generate validation scripts:
 ### Common Issues
 
 | Issue | Detection | Recovery |
-|-------|-----------|----------|
+| ----- | --------- | -------- |
 | Unreplaced placeholders | Regex scan for `\[.*?\]` | Prompt user for values |
 | Broken links | Link validation | Fix relative paths |
 | Format errors | Markdown parser | Auto-format or report |
