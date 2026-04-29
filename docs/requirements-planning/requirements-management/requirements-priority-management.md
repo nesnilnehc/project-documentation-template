@@ -1,11 +1,17 @@
+---
+artifact_type: engineering-standard
+lifecycle: living
+applies_to: projects with product planning requirements
+required: false
+---
 <!--
 Maintenance: This document is maintained with reference to the project documentation structure defined in [README.md](../../../README.md).
 Structure: requirements-planning > requirements-management > requirements-priority
 -->
 # Requirements Priority Management
 
-[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](https://github.com/nesnilnehc/project-documentation-template)
-[![Status](https://img.shields.io/badge/Status-Active-green.svg)](https://github.com/nesnilnehc/project-documentation-template)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](https://github.com/nesnilnehc/engram)
+[![Status](https://img.shields.io/badge/Status-Active-green.svg)](https://github.com/nesnilnehc/engram)
 
 This document defines standardized requirements priority management processes based on mature industry prioritization frameworks, helping teams make scientific priority decisions.
 

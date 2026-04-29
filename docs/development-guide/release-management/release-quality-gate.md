@@ -1,3 +1,9 @@
+---
+artifact_type: engineering-standard
+lifecycle: living
+applies_to: projects with release process
+required: false
+---
 <!--
 Maintenance: This document is maintained with reference to the project documentation structure defined in [README.md](../../../README.md).
 Structure: development-guide > release-management > release-process

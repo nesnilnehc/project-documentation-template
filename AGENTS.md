@@ -1,6 +1,6 @@
 # AI Agents Configuration
 
-This document defines how AI agents should interact with this project documentation template repository.
+This document defines how AI agents should interact with the engram repository.
 
 ## Agent Capabilities
 

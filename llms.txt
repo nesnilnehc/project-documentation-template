@@ -1,6 +1,6 @@
-# Project Documentation Template
+# Engram
 
-> Standardized documentation templates for enterprise projects, optimized for AI-assisted development.
+> 跨项目工程规范库——为工程团队和 AI agent 提供统一、可复用的规范体系。
 
 ## Overview
 

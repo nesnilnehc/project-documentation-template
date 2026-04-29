@@ -1,3 +1,9 @@
+---
+artifact_type: engineering-standard
+lifecycle: living
+applies_to: projects requiring architecture decision records
+required: false
+---
 <!--
 Maintenance: This document is maintained with reference to the project documentation structure defined in [README.md](../../../README.md).
 Structure: process-management > change-management > architecture-decisions > adr-template

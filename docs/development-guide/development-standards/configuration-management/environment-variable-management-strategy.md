@@ -1,3 +1,9 @@
+---
+artifact_type: engineering-standard
+lifecycle: living
+applies_to: projects using .env configuration
+required: false
+---
 <!--
 Maintenance: This document is maintained with reference to the project documentation structure defined in [README.md](../../../../README.md).
 Structure: development-guide > development-standards > configuration-management > environment-variable-management

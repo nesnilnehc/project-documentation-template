@@ -1,3 +1,9 @@
+---
+artifact_type: engineering-standard
+lifecycle: living
+applies_to: projects with third-party dependencies
+required: false
+---
 <!--
 Maintenance: This document is maintained with reference to the project documentation structure defined in [README.md](../../../../../README.md).
 Structure: architecture > system-architecture > technology-stack > dependency-management
